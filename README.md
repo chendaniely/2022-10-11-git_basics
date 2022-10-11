@@ -26,3 +26,11 @@
 
 - `.gitkeep`: file used as a convention to "keep" folders that are empty
 - `.gitignore`: file used by git to match files to ignore
+
+- `ssh-keygen`: create an ssh key
+    - copy your `~/.ssh/id_rsa.pub` into your github account
+    - use SSH in github not HTTPS
+
+- `git remote add <NAME> <URL>`: `git remote add origin <SSH URL>`: create remote connection
+- `git push origin main`: sends code to the remote
+
