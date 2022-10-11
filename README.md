@@ -13,4 +13,7 @@
 
 - `git diff`: shows you new chagnes to a file that has not been committed
     - `git diff --stanged`: shows you changes in the staging area
+    - `git diff <HASH> <FILE>`: shows you difference between current and commit
+        - `HEAD~1`: to use relative to head
+        - `<HASH>`: to use the actual hash location
 
