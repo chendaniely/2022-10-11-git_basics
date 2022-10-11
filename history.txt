@@ -1,0 +1,217 @@
+   76  mkdir git
+   77  cd git
+   78  pwd
+   79  mkdir 2022-10-11-git_basics
+   80  cd 2022-10-11-git_basics/
+   81  pwd
+   82  ls
+   83  explorer .
+   84  # open .
+   85  # xdg-open .
+   86  ls -a
+   87  git init
+   88  ls
+   89  ls -a
+   90  git config --global user.name "Daniel Chen"
+   91  git config --global user.email "chendaniely@gmail.com"
+   92  git config --global core.editor "nano -w"
+   93  # git congif --global core.editor "code --wait"
+   94  git status
+   95  nano README.md
+   96  git status
+   97  git add README.md
+   98  git status
+   99  git commit
+  100  git status
+  101  # edit readme.md define git add and git commit, and commit chagnes
+  102  # git config --global core.editor "code --wait"
+  103  nano README.md
+  104  git status
+  105  git add README.md
+  106  git commit
+  107  git status
+  108  nano README.md
+  109  git status
+  110  git add README.md
+  111  git status
+  112  git commit -m "define git commit -m"
+  113  git status
+  114  rm README.md
+  115  gits tatus
+  116  git status
+  117  git restore README.md
+  118  git status
+  119  ls
+  120  git log
+  121  git log
+  122  git status
+  123  git log
+  124  git log --oneline
+  125  nano README.md
+  126  git status
+  127  git diff README.md
+  128  nano README.md \
+  129  cd git/2022-10-11-git_basics/
+  130  git status
+  131  git diff
+  132  git commit -m "define git log + --oneline"
+  133  git status
+  134  git add README.md
+  135  git commit -m "define git log + --oneline"
+  136  git status
+  137  history
+  138  git diff
+  139  git status
+  140  git log --oneline
+  141  nano README.md
+  142  git status
+  143  git diff
+  144  git add README.md
+  145  git status
+  146  git diff
+  147  git diff --staged
+  148  nano README.md
+  149  gits tatus
+  150  git status
+  151  git diff --staged
+  152  git diff
+  153  git status
+  154  git add README.md
+  155  git status
+  156  git commit -m "define git diff and --stanged"
+  157  git log
+  158  git log --oneline
+  159  git diff 4ac02d9 README.md
+  160  git diff HEAD~3 README.md
+  161  nano README.md
+  162  git status
+  163  git diff
+  164  git add README.md
+  165  gits tatus
+  166  git status
+  167  git diff --staged
+  168  git commit -m "git diff hash location"
+  169  git log --oneline
+  170  cat README.md
+  171  git diff 4ac02d9 README.md
+  172  git log --oneline
+  173  git checkout 4ac02d9 README.md
+  174  git status
+  175  git diff
+  176  git diff --staged
+  177  cat README.md
+  178  git status
+  179  git restore --staged README.md
+  180  gits tatus
+  181  git status
+  182  git diff
+  183  git status
+  184  git restore README.md
+  185  git status
+  186  git status
+  187  git log --oneline
+  188  git checkout 4ac02d9
+  189  git log --oneline
+  190  cat README.md
+  191  git log --oneline --all
+  192  git checkout main
+  193  # git switch main
+  194  # git switch -
+  195  cat README.md
+  196  nano README.md
+  197  git status
+  198  git diff
+  199  git add README.md
+  200  git status
+  201  git diff --staged
+  202  git commit -m "HEAD, checkout, log --all"
+  203  ls
+  204  mkdir analysis data
+  205  ls
+  206  git status
+  207  touch data/.gitkeep
+  208  git status
+  209  touch analysis/analysis.py
+  210  git status
+  211  ls -a
+  212  pwd
+  213  git add .
+  214  git status
+  215  git commit -m "create analysis and data folders"
+  216  git status
+  217  ls
+  218  touch data/data.csv
+  219  git status
+  220  mkdir output
+  221  ls
+  222  touch output/.gitkeep
+  223  git status
+  224  git add .
+  225  git status
+  226  git commit -m "use data for output"
+  227  ls
+  228  git status
+  229  touch output/figure.png
+  230  git status
+  231  nano .gitignore
+  232  git status
+  233  cat .gitignore
+  234  git add .
+  235  git commit -m "ignore output folder and .DS_Store"
+  236  git status
+  237  nano README.md
+  238  git status
+  239  git diff
+  240  git add .
+  241  git status
+  242  gti commit -m "gitkeep + gitignore"
+  243  git commit -m "gitkeep + gitignore"
+  244  git status
+  245  git log --oneline
+  246  history
+  247  git log --oneline
+  248  git restore --source=4ac02d9 README.md
+  249  git status
+  250  git restore README.md
+  251  git status
+  252  ssh-keygen
+  253  cat ~/.ssh/git_basics.pub # cat ~/.ssh/id_rsa.pub
+  254  git remote add origin git@github.com:chendaniely/2022-10-11-git_basics.git
+  255  git remote -v
+  256  git push origin main
+  257  nano README.md
+  258  git status
+  259  git diff
+  260  git add .
+  261  git commit -m "ssh-keygen remote add push"
+  262  git status
+  263  git log --oneline --all
+  264  git push origin main
+  265  git log --oneline --all
+  266  cat README.md
+  267  git pull origin main
+  268  cat README.md
+  269  git log --oneline
+  270  git pull origin main
+  271  nano README.md
+  272  git diff README.md
+  273  git status
+  274  git diff
+  275  git add .
+  276  git commit -m "changes to file locally"
+  277  git push origin main
+  278  git pull origin main
+  279  nano README.md
+  280  git status
+  281  git add README.md
+  282  git status
+  283  git commit -m "fix conflicts"
+  284  git log --online
+  285  git log --oneline
+  286  git push origin main
+  287  cd ~/Desktop/
+  288  git clone git@github.com:chendaniely/2022-10-11-git_basics.git
+  289  cd 2022-10-11-git_basics/
+  290  ls
+  291  history
+
