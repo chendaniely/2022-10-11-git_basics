@@ -1,4 +1,6 @@
-# 2022-10-11 Git Basics
+# 2022-10-11: Git Basics
+
+## Getting Started
 
 - `git init`: initialize git repository in current directory
     - make sure that you don't nest git repositories
@@ -8,7 +10,7 @@
 - `git commit`: open up editor for you to write a meesage and create commit
     - `git commit -m "MESSAGE"`: writes commit message without editor
 
-# history
+## History
 
 - `git log`: shows us the log / commit history
     - `git log --oneline`: shows us the 1 line per commit version
@@ -26,12 +28,12 @@
     - `git switch main`: also brings you back to main
 - `git log --oneline --all`: show you all the history not just from HEAD
 
-# Ignoreing things
+## Ignoreing things
 
 - `.gitkeep`: file used as a convention to "keep" folders that are empty
 - `.gitignore`: file used by git to match files to ignore
 
-# Remotes
+## Remotes
 
 - `ssh-keygen`: create an ssh key
     - copy your `~/.ssh/id_rsa.pub` into your github account
@@ -42,3 +44,7 @@
 - `git pull origin main`: brings code down from the remote to your local computer
 
 # Merge conflicts
+
+- `git push origin main`: this might error / reject. read the message
+- `git pull origin main`: sync work first
+- Fix conflicts `<<< === >>>`: fix the file the way you want
