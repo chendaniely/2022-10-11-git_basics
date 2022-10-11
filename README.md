@@ -33,4 +33,4 @@
 
 - `git remote add <NAME> <URL>`: `git remote add origin <SSH URL>`: create remote connection
 - `git push origin main`: sends code to the remote
-
+- `git pull origin main`: brings code down from the remote to your local computer
