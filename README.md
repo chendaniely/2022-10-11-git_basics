@@ -7,3 +7,6 @@
 - `git add <FILE>`: puts <FILE> into your staging area
 - `git commit`: open up editor for you to write a meesage and create commit
     - `git commit -m "MESSAGE"`: writes commit message without editor
+
+- `git log`: shows us the log / commit history
+    - `git log --oneline`: shows us the 1 line per commit version
