@@ -10,3 +10,7 @@
 
 - `git log`: shows us the log / commit history
     - `git log --oneline`: shows us the 1 line per commit version
+
+- `git diff`: shows you new chagnes to a file that has not been committed
+    - `git diff --stanged`: shows you changes in the staging area
+
