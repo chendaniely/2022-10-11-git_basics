@@ -23,3 +23,6 @@
     - `git checkout main`: bring you back to main
     - `git switch main`: also brings you back to main
 - `git log --oneline --all`: show you all the history not just from HEAD
+
+- `.gitkeep`: file used as a convention to "keep" folders that are empty
+- `.gitignore`: file used by git to match files to ignore
